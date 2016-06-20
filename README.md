@@ -16,9 +16,18 @@ Texto del titulo 1
 
 
 {% regexp %}
-¿4+4?
+Who were the Spanish kings when America was discovered?
 {% solution %}
-8
+Catholic Monarchs, also called Catholic Kings, or Catholic Majesties, Spanish Reyes Católicos, Ferdinand II of Aragon and Isabella I of Castile
 {% validation %}
-/\s*8\s*/i
+/
+  (Catholic\s+Monarchs)            |
+  (Catholic\s+Kings)               |
+  (Catholic\s+Majesties)           |
+  ((Spanish)?\s+Reyes\s+Católicos) |
+  (Ferdinand(\s+II)?(\s+of\s+Aragon)?(\s+and)?(\s+Isabella)(\s+I)?(\s+of\s+Castill?e)) |
+  ((Isabella)(\s+I)?(\s+of\s+Castill?e)(\s+and)?\s+(Ferdinand(\s+II)?(of\s+Aragon)))?
+/ix
+{% editor %}
+Placeholder text on editor
 {% endregexp %}
