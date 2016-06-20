@@ -22,7 +22,7 @@ reyes catolicos
 {% validation %}
 /
   (reyes\s+catolicos)            |
-  (isabel\s+y\s+fernando)               |
+  (isabel\s+y\s+fernando)        |
 /ix
 {% editor %}
 Placeholder text on editor
