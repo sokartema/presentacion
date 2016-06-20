@@ -36,3 +36,11 @@ end
 {% language %}
 ruby
 {% endquestion %}
+
+{% regexp color="red" %}
+¿4+4?
+{% solution %}
+8
+{% validation %}
+/\s*8\s*/i
+{% endregexp %}

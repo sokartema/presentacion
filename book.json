@@ -3,7 +3,14 @@
   "plugins": ["jazer"],
 
   "pluginsConfig":{
-
+    "jazer": {
+      "width": "80%",
+      "color": "#BB504B",
+      "gutter": "false",
+      "support": ["https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js","https://ajax.googleapis.com/ajax/libs/mootools/1.6.0/mootools.min.js"],
+      "editorHeight": "100px",
+      "fontSize": "16px"
+    }
   }
 
 }

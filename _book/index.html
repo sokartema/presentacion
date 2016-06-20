@@ -58,14 +58,16 @@
         
     </head>
     <body>
-        
+        <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/mootools/1.6.0/mootools.min.js'></script>
+
         
     <div class="book"
         data-level="0"
         data-chapter-title="Introduction"
         data-filepath="README.md"
         data-basepath="."
-        data-revision="Mon Jun 20 2016 03:39:20 GMT+0100 (Hora de verano GMT)"
+        data-revision="Mon Jun 20 2016 03:45:34 GMT+0100 (Hora de verano GMT)"
         data-innerlanguage="">
     
 
@@ -165,8 +167,8 @@
 </tr>
 </tbody>
 </table>
-<p><div class="question" style=" ">
-	<div class="header" style="">Exercise</div>
+<p><div class="question" style="width: 80%; border: medium solid  #BB504B;">
+	<div class="header" style="background-color: #BB504B;">Exercise</div>
 	<div class="message">
 		<p>&#xBF;Quienes reinaban en Espa&#xF1;a cuando se descubri&#xF3; America? RUBY</p>
 
@@ -183,10 +185,25 @@
 
   end
 
-end" data-language="ruby" style=" "></div>
+end" data-language="ruby" data-gutter="false" style="font-size: 16px;height: 100px; "></div>
 	<div class="correct"> <i class="fa fa-check-square-o fa-lg"></i> Correct </div>
 	<div class="fail"> <i class="fa fa-times fa-lg"></i> Match Failed</div>
 	<i class="fa fa-spinner fa-pulse fa-5x fa-fw load-icon"></i>
+	<div class="buttons">
+	    <button class="button submit">Submit</button>
+	    <button class="button solution">Solution</button>
+	</div>
+</div>
+</p>
+<p><div class="regexp" style="width: 80%; border: medium solid  red;">
+	<div class="header" style="background-color: red;">Exercise</div>
+	<div class="message">
+		<p>&#xBF;4+4?</p>
+
+	</div>
+	<div class="editor" data-solution="8" data-validation="/\s*8\s*/i" data-gutter="false" style="font-size: 16px;height: 100px; "></div>
+	<div class="correct"> <i class="fa fa-check-square-o fa-lg"></i> Correct </div>
+	<div class="fail"> <i class="fa fa-times fa-lg"></i> Match Failed</div>
 	<div class="buttons">
 	    <button class="button submit">Submit</button>
 	    <button class="button solution">Solution</button>
@@ -256,7 +273,7 @@ end" data-language="ruby" style=" "></div>
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"jazer":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    var config = {"jazer":{"width":"80%","color":"#BB504B","gutter":"false","support":["https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js","https://ajax.googleapis.com/ajax/libs/mootools/1.6.0/mootools.min.js"],"editorHeight":"100px","fontSize":"16px"},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
     gitbook.start(config);
 });
 </script>
