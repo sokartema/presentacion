@@ -13,3 +13,12 @@ Texto del titulo 1
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
+
+
+{% regexp %}
+¿4+4?
+{% solution %}
+8
+{% validation %}
+/\s*8\s*/i
+{% endregexp %}
