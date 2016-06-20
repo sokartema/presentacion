@@ -15,13 +15,24 @@ Texto del titulo 1
 | zebra stripes | are neat      |    $1 |
 
 
-{% questionjs %}
-¿Quienes reinaban en España cuando se descubrió America?
+{% question %}
+¿Quienes reinaban en España cuando se descubrió America? RUBY
 {% solution %}
 reyes catolicos
 {% validation %}
-function(respuesta) {
-  if (respuesta.match(/reyes\s+catolicos/i)) return true;
-  if (respuesta.match(/isabel/i && respuesta.match(/fernando/i) )) return true;
-}
-{% endquestionjs %}
+def exercise(respuesta)
+
+  if(respuesta =~ /reyes\s+catolicos/)
+
+    return true;
+
+  else
+
+    return false;
+
+  end
+
+end
+{% language %}
+ruby
+{% endquestion %}

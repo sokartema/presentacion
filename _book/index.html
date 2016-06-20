@@ -65,7 +65,7 @@
         data-chapter-title="Introduction"
         data-filepath="README.md"
         data-basepath="."
-        data-revision="Mon Jun 20 2016 02:56:33 GMT+0100 (Hora de verano GMT)"
+        data-revision="Mon Jun 20 2016 03:39:20 GMT+0100 (Hora de verano GMT)"
         data-innerlanguage="">
     
 
@@ -165,18 +165,28 @@
 </tr>
 </tbody>
 </table>
-<p><div class="questionjs" style=" ">
+<p><div class="question" style=" ">
 	<div class="header" style="">Exercise</div>
 	<div class="message">
-		<p>&#xBF;Quienes reinaban en Espa&#xF1;a cuando se descubri&#xF3; America?</p>
+		<p>&#xBF;Quienes reinaban en Espa&#xF1;a cuando se descubri&#xF3; America? RUBY</p>
 
 	</div>
-	<div class="editor" data-solution="reyes catolicos" data-validation="function(respuesta) {
-  if (respuesta.match(/reyes\s+catolicos/i)) return true;
-  if (respuesta.match(/isabel/i &amp;&amp; respuesta.match(/fernando/i) )) return true;
-}" style=" "></div>
+	<div class="editor" data-server="" data-solution="reyes catolicos" data-validation="def exercise(respuesta)
+
+  if(respuesta =~ /reyes\s+catolicos/)
+
+    return true;
+
+  else
+
+    return false;
+
+  end
+
+end" data-language="ruby" style=" "></div>
 	<div class="correct"> <i class="fa fa-check-square-o fa-lg"></i> Correct </div>
 	<div class="fail"> <i class="fa fa-times fa-lg"></i> Match Failed</div>
+	<i class="fa fa-spinner fa-pulse fa-5x fa-fw load-icon"></i>
 	<div class="buttons">
 	    <button class="button submit">Submit</button>
 	    <button class="button solution">Solution</button>
